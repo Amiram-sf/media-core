@@ -1,0 +1,1 @@
+export { mediaCapability } from './media-capability'
