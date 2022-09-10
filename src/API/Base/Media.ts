@@ -12,13 +12,25 @@ export const Media = async function (mediaConfig: IMedia) {
         }
     }
 
+    const isTypeSupport = () => {
+        if (!mediaConfig?.mediaRecorderOptions) {
+            return true;
+        }
+        return MediaRecorder.isTypeSupported(mediaConfig.mediaRecorderOptions.mimeType);
+    }
+
     try {
+
         if (!mediaCapability()) {
             throw Error.Security
         }
 
+        if (!isTypeSupport()) {
+            throw Error.TypeSupport
+        }
+
         const stream = await getUserMedia();
-        return new MediaRecorder(stream, mediaConfig?.mediaRecorderOptions);
+        return new MediaRecorder(stream, mediaConfig?.mediaRecorderOptions)
 
     } catch (e) {
         throw e

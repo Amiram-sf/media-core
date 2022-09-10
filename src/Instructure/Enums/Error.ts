@@ -1,4 +1,5 @@
 export enum Error {
     Security,
-    RejectPermission
+    RejectPermission,
+    TypeSupport
 }

@@ -1,2 +1,2 @@
-# recorder-core
+# media-core
 recorder using MediaRecorder API.

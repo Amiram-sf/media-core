@@ -9,5 +9,9 @@ export const Error: IError = {
     RejectPermission: {
         id: ErrorEnum.RejectPermission,
         message: "Request permission rejected"
+    },
+    TypeSupport: {
+        id: ErrorEnum.TypeSupport,
+        message: "Type Not Supported"
     }
 } 

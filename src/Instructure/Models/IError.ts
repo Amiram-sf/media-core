@@ -6,4 +6,5 @@ interface ErrorMessage {
 export interface IError {
     Security: ErrorMessage
     RejectPermission: ErrorMessage
+    TypeSupport: ErrorMessage
 } 
