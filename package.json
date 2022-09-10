@@ -8,7 +8,22 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Amiram-sf/media-core.git"
+  },
+  "keywords": [
+    "typescript",
+    "recorder",
+    "voice recording",
+    "video recording",
+    "media recording",
+    "getusermedia",
+    "MediaRecorder",
+    "video recorder",
+    "audio recorder"
+  ],
+  "homepage": "https://github.com/Amiram-sf/media-core.git#readme",
   "author": "Amiram-sf",
   "license": "MIT",
   "devDependencies": {
