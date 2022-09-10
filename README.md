@@ -1,2 +1,2 @@
 # media-core
-recorder using MediaRecorder API.
+A Typescript code, based on MediaRecorder() API to get MediaRecorder.
