@@ -1,3 +1,3 @@
-export const mediaCapability = () => {
+export const mediaCapability = (): boolean => {
     return !!navigator?.mediaDevices
 } 

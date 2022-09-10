@@ -1,8 +1,9 @@
+import { isTypeSupport } from "src/Utils/mime-type";
 import { Error } from "./../../Instructure/Constants/Error";
 import { IMedia } from "./../../Instructure/Models/IConstraints";
 import { mediaCapability } from "./../../Utils/index";
 
-export const Media = async function (mediaConfig: IMedia) {
+export const Media = async function (mediaConfig: IMedia): Promise<MediaRecorder> {
 
     const getUserMedia = async () => {
         try {
@@ -12,20 +13,16 @@ export const Media = async function (mediaConfig: IMedia) {
         }
     }
 
-    const isTypeSupport = () => {
-        if (!mediaConfig?.mediaRecorderOptions) {
-            return true;
-        }
-        return MediaRecorder.isTypeSupported(mediaConfig.mediaRecorderOptions.mimeType);
-    }
-
     try {
 
         if (!mediaCapability()) {
             throw Error.Security
         }
 
-        if (!isTypeSupport()) {
+        if (
+            mediaConfig?.mediaRecorderOptions &&
+            !isTypeSupport(mediaConfig.mediaRecorderOptions.mimeType)
+        ) {
             throw Error.TypeSupport
         }
 

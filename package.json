@@ -1,7 +1,7 @@
 {
   "name": "media-core",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Typescript code, based on MediaRecorder() API to get MediaRecorder",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
