@@ -1,4 +1,6 @@
 export interface IAudioRecorderOptions {
-    audioBitsPerSecond?: number,
     mimeType: string
+    audioBitsPerSecond?: number,
+    videoBitsPerSecond?: number
+    bitsPerSecond?: number,
 }
