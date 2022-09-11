@@ -83,8 +83,10 @@ interface IMedia {
         video?: boolean
     },
     mediaRecorderOptions?: {
-        audioBitsPerSecond?: number,
         mimeType: string
+        audioBitsPerSecond?: number,
+        videoBitsPerSecond?: number
+        bitsPerSecond?: number,
     }
 }
 ```
