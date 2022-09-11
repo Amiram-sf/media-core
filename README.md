@@ -55,7 +55,7 @@ This function return [MediaRecorder](https://developer.mozilla.org/en-US/docs/We
 if this function can not return MediaRecorder instance it throw an error.
 
 ```
-interface ErrorMessage {
+interface IErrorMessage {
     id: number
     message: string
 }
