@@ -1,10 +1,10 @@
-interface ErrorMessage {
+interface IErrorMessage {
     id: number
     message: string
 }
 
 export interface IError {
-    Security: ErrorMessage
-    RejectPermission: ErrorMessage
-    TypeSupport: ErrorMessage
+    Security: IErrorMessage
+    RejectPermission: IErrorMessage
+    TypeSupport: IErrorMessage
 } 
