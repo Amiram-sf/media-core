@@ -1,6 +1,3 @@
-⚠️⚠️ I will complete this documentation and i'll provide a demo site
-⚠️⚠️
-
 # media-core
 
 A Typescript code, based on [MediaRecorder()](https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder) API to get MediaRecorder.
