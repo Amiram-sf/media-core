@@ -1,7 +1,6 @@
-import { isTypeSupport } from "src/Utils/mime-type";
 import { Error } from "./../../Instructure/Constants/Error";
 import { IMedia } from "./../../Instructure/Models/IConstraints";
-import { mediaCapability } from "./../../Utils/index";
+import { isTypeSupport, mediaCapability } from "./../../Utils";
 
 export const Media = async function (mediaConfig: IMedia): Promise<MediaRecorder> {
 
