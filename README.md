@@ -2,6 +2,8 @@
 
 A Typescript code, based on [MediaRecorder()](https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder) API to get MediaRecorder.
 
+If you want to see complete UI react voice recording you can use this package [( React Voice Recorder )](https://www.npmjs.com/package/@amirseifi/react-voice-recorder)
+
 ## Installation
 
 ```
